@@ -21,8 +21,9 @@
 <h3>Controller</h3>
 <p>Criar o método Get retornando uma string</p>
 <p>
+  
+      [HttpGet("{id}")] // sem esse codigo ele não lê o id
       public string Get(int id){
-
       Context con = new Context();
       Produto p = con.Busca(id); //Este método deve buscar na lista o id especifico e retornar o objeto
       return p.ToXml(); //Recebe o xml q é uma string
