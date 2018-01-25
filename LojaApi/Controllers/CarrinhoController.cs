@@ -13,11 +13,19 @@ namespace LojaApi.Controllers
     [Route("api/Carrinho")]
     public class CarrinhoController : Controller
     {
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public Carrinho Get(int id)
         {
             CarrinhoDAO dao = new CarrinhoDAO();
             Carrinho carrinho = dao.Busca(id);
-            return carrinho.ToXml();
+            return carrinho;
        }
+        [HttpPost]
+        public string Post([FromBody]Carrinho carrinho)
+        {
+            CarrinhoDAO dao = new CarrinhoDAO();
+            dao.Adiciona(carrinho);
+            return "sucesso";
+        }
     }
 }
