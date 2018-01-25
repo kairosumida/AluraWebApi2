@@ -1,3 +1,4 @@
+
 <h1>Criando Get</h1>
 <h2>Modo manual</h2>
 <h3>Model</h3>
@@ -33,10 +34,8 @@
 <p>Criar o model</p>
 <p>Criar o Context e no construtor</p>
 <p>  
-    public NomeContext(DbContextOptions<NomeContext> options)
-              : base(options)
-            {
-            }
+      
+      public NomeContext(DbContextOptions<NomeContext> options): base(options){}
 </p>
 
 <p>Na classe Startup</p>
