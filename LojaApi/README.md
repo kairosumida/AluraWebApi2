@@ -1,3 +1,5 @@
+
+
 <h1>Lado Servidor</h1>
 <h2>Get</h2>
 <h3>Modo manual</h3>
@@ -54,3 +56,15 @@
         }
  </p>
  <p>Agora é so usar o Scaffold para API</p>
+ 
+<h2>Post</h2>
+<p>
+  
+      [HttpPost]
+      public string Post([FromBody]Objeto objeto)
+      {
+          Context con = new Context();
+          con.Adiciona(objeto);
+          return "sucesso";
+      }
+</p>
