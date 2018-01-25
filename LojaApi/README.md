@@ -1,7 +1,7 @@
-
-<h1>Criando Get</h1>
-<h2>Modo manual</h2>
-<h3>Model</h3>
+<h1>Lado Servidor</h1>
+<h2>Get</h2>
+<h3>Modo manual</h3>
+<h4>Model</h4>
 <p>Criar um model para ter um objeto a ser enviado ou recebido</p>
 <p>
   public class Produto(){
@@ -31,7 +31,7 @@
 </p>
 
 
-<h2>Modo Automatico</h2>
+<h3>Modo Automatico</h3>
 <p>Criar o model</p>
 <p>Criar o Context e no construtor</p>
 <p>  
