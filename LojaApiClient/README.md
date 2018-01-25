@@ -1,5 +1,5 @@
 <h1>Cliente</h1>
-<p>Criado um cliente para acessar as informações da API</p>
+<h2>Get</h2>
 
 <code>
 	HttpWebRequest request = (HttpWebRequest)WebRequest.Create("!EndereçoAPI!");
@@ -12,3 +12,4 @@
         Console.Write(reader.ReadToEnd());
     }
 </code>
+
